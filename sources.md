@@ -3,3 +3,6 @@
 - https://sdk-forum.dji.net/hc/en-us/articles/11317874071065-How-to-calculate-the-FoV-of-the-camera-lens
 - https://nzphoto.tripod.com/3d/330baseformulae.html
 - https://courses.cs.washington.edu/courses/cse455/09wi/Lects/lect16.pdf
+
+- https://www.mygreatlearning.com/blog/introduction-to-edge-detection/
+- https://stackoverflow.com/questions/596216/formula-to-determine-perceived-brightness-of-rgb-color
