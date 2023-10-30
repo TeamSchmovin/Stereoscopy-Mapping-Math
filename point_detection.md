@@ -1,11 +1,15 @@
-# Edge Detection Basics
+# The Math of Point Detection
 
-## Canny Edge Detection
+## Outline
 
-- Convert the image to grayscale
-- Reduce noise  
-  - As the edge detection that using derivatices is sensetive to noise, we reduce it
+1. Edge Detection
+2. Edge Parsing
+3. Edge Matching
+4. Depth Calculation
 
+## Edge Detection Basics
+
+While there are many methods of edge detection that already exist, and this may correlate heavily with an existing algorithm, this is completely from scratch.
 
 To do this we calculate total color difference at pixel differences. For this we will use R, G, and B
 
@@ -42,3 +46,7 @@ fn calculate_de(r_1: i8, g_1: i8, b_1: i8, r_2: i8, g_2: i8, b_2: i8) {
     return dE;
 }
 ```
+
+A new two-dimensional array would be created with a width of the width of the original picture minus one and a height of the height of the original pictue minus one. A cursor would be moved across the picture to the width of the original picture minus one and the height of the original picture minus one, iterating over each pixel. 
+
+At each pixel value, you calculate the difference between the pixel directly below and the pixel directly to the right. The final value that would be placed into the new two-dimensional array of pixel values is the maximum of those two values, to ensure that if an edge is present, it is seen in the final map even if the edge only appears in one dimension.
