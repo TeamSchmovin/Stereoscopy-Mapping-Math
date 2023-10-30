@@ -9,7 +9,7 @@
 
 To do this we calculate total color difference at pixel differences. For this we will use R, G, and B
 
-$$ L = (0.2126*R + 0.7152*G + 0.0722*B) $$
+$$ L = (0.2126*R + 0.7152*G + 0.0722*B)$$
 
 $$ a = R-G $$
 
