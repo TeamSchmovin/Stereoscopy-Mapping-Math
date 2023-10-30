@@ -9,8 +9,11 @@
 
 To do this we calculate total color difference at pixel differences. For this we will use R, G, and B
 $$ L = (0.2126*R + 0.7152*G + 0.0722*B) $$
+
 $$ a = R-G $$
+
 $$ b = \frac{R+G}{2}-B $$
+
 $$ \Delta E = \sqrt {\Delta L^2+\Delta a^2+\Delta b^2} $$
 
 $ \Delta E $ is a numerical way of seeing change in color. Make a new array of the differences to spot high contrast zones.
