@@ -26,7 +26,7 @@ $\Delta E$ is a numerical way of seeing change in color. Make a new array of the
 Below is a function in the Rust programming language to calculate $\Delta E$ with $R$, $G$, and $B$:
 
 ```rust
-fn calculate_de(r_1: i8, g_1: i8, b_1: i8, r_2: i8, g_2: i8, b_2: i8) {
+fn calculate_de(r_1: u8, g_1: u8, b_1: u8, r_2: u8, g_2: u8, b_2: u8) {
     
     let L_1: f32 = 0.2126*r_1 as f32 +0.7512*g_1 as f32 +0.0722*b_1 as f32;
     let L_2: f32 = 0.2126*r_2 as f32 +0.7512*g_2 as f32 +0.0722*b_2 as f32;
