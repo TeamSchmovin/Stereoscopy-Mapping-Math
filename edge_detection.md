@@ -19,7 +19,7 @@ $$ \Delta E = \sqrt {\Delta L^2+\Delta a^2+\Delta b^2} $$
 
 $\Delta E$ is a numerical way of seeing change in color. Make a new array of the differences to spot high contrast zones.
 
-Below is a function in the Rust programming language to calculate $ \Delta E $ with $R$, $G$, and $B$:
+Below is a function in the Rust programming language to calculate $\Delta E$ with $R$, $G$, and $B$:
 
 ```rust
 fn calculate_de(r_1: i8, g_1: i8, b_1: i8, r_2: i8, g_2: i8, b_2: i8) {
